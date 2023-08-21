@@ -1,5 +1,6 @@
 require 'spec_helper'
 require 'vcr'
+require 'simplecov'
 
 
 ENV['RAILS_ENV'] ||= 'test'
@@ -42,3 +43,4 @@ VCR.configure do |config|
   config.hook_into :webmock
 end
 
+SimpleCov.start
